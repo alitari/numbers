@@ -19,10 +19,10 @@ public class Happy {
 	private static int sumQuadDigits(int zahl) {
 		int[] digits = digits(zahl);
 		int[] quadDigits = quadriere(digits);
-		return summe(quadDigits);
+		return sum(quadDigits);
 	}
 
-	static int summe(int[] quadrierteZiffern) {
+	static int sum(int[] quadrierteZiffern) {
 		int summe = 0;
 		for ( int i = 0; i < quadrierteZiffern.length;i++ ) {
 			summe +=quadrierteZiffern[i];

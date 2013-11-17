@@ -19,7 +19,7 @@ public class HappyNumberTest {
 	}
 
 	@Test
-	public void ziffern() throws Exception {
+	public void digits() throws Exception {
 		for (int i = 0; i < 10; i++) {
 			assertEquals(i, Happy.digits(i)[0]);
 			assertEquals(1, Happy.digits(0).length);
@@ -42,7 +42,7 @@ public class HappyNumberTest {
 	}
 	
 	@Test
-	public void quadriere() throws Exception {
+	public void quad() throws Exception {
 		int[] ziffern = new int[] {1,2,3,4,5,6,7};
 		int[] quadriert = Happy.quadriere(ziffern);
 		assertEquals(1,quadriert[0]);
@@ -55,13 +55,13 @@ public class HappyNumberTest {
 	}
 	
 	@Test
-	public void summe() throws Exception {
+	public void sum() throws Exception {
 		int[] ziffern = new int[] {1,2,3,4,5,6,7};
-		int summe = Happy.summe(ziffern);
+		int summe = Happy.sum(ziffern);
 		assertEquals(28, summe);
 		
 		ziffern = new int[] {19,3,7};
-		summe = Happy.summe(ziffern);
+		summe = Happy.sum(ziffern);
 		assertEquals(29, summe);
 		
 		
