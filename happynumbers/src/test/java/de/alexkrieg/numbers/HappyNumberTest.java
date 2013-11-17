@@ -21,23 +21,23 @@ public class HappyNumberTest {
 	@Test
 	public void ziffern() throws Exception {
 		for (int i = 0; i < 10; i++) {
-			assertEquals(i, Happy.ziffern(i)[0]);
-			assertEquals(1, Happy.ziffern(0).length);
+			assertEquals(i, Happy.digits(i)[0]);
+			assertEquals(1, Happy.digits(0).length);
 		}
 		
 		int example = 12;
-		assertEquals(1, Happy.ziffern(example)[0]);
-		assertEquals(2, Happy.ziffern(example)[1]);
-		assertEquals(2, Happy.ziffern(example).length);
+		assertEquals(1, Happy.digits(example)[0]);
+		assertEquals(2, Happy.digits(example)[1]);
+		assertEquals(2, Happy.digits(example).length);
 		
 		example = 73834;
-		assertEquals(7, Happy.ziffern(example)[0]);
-		assertEquals(3, Happy.ziffern(example)[1]);
-		assertEquals(8, Happy.ziffern(example)[2]);
-		assertEquals(3, Happy.ziffern(example)[3]);
-		assertEquals(4, Happy.ziffern(example)[4]);
+		assertEquals(7, Happy.digits(example)[0]);
+		assertEquals(3, Happy.digits(example)[1]);
+		assertEquals(8, Happy.digits(example)[2]);
+		assertEquals(3, Happy.digits(example)[3]);
+		assertEquals(4, Happy.digits(example)[4]);
 		
-		assertEquals(5, Happy.ziffern(example).length);
+		assertEquals(5, Happy.digits(example).length);
 		
 	}
 	
